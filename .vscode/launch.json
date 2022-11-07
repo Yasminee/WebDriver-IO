@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "WebDriver Debugging",
+            "type": "node",
+            "request": "launch",
+            "args": ["wdio.conf.js"],
+            "cwd": "${workspaceFolder}",
+            "autoAttachChildProcesses": true,
+            "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+            "console": "integratedTerminal",
+           
+        },
+    ]
+}
