@@ -34,9 +34,9 @@ xit('Login successfully',async()=>
       expectchai(await dropdown.getValue()).to.equal("stud")
 })
 
-xit('Dynamic dropdown',async()=>
+it('Dynamic dropdown Smoke',async()=>
 {
-      await browser.url("https://rahulshettyacademy.com/AutomationPractice/")
+      await browser.url("/AutomationPractice/")
       await $("#autocomplete").setValue("ind")
       await browser.pause(3000)
        let items = await $$("[class='ui-menu-item'] div")
@@ -51,7 +51,7 @@ xit('Dynamic dropdown',async()=>
 
        }
 })
-it('Dynamic dropdown',async()=>
+it('Dynamic dropdown sanity',async()=>
 {
       await browser.url("https://rahulshettyacademy.com/AutomationPractice/")
       const elements = await $$("input[type='checkbox']")

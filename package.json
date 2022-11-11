@@ -17,7 +17,11 @@
         "wdio-chromedriver-service": "^8.0.0"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "suite1": "npx wdio run wdio.conf.js --suite suite1",
+        "suite2": "npx wdio run wdio.conf.js --suite suite2",
+        "regQA": "npx wdio run wdio.conf.js",
+        "regUAT": "npx wdio run wdio_uat.conf.js"
     },
     "dependencies": {
         "chai": "^4.3.6"

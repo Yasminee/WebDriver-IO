@@ -1,9 +1,17 @@
 describe('Ecommerce App',async()=>
 {
 
-xit('Login Invalid',async()=>
+// xit('Login fail page title Smoke',function()
+// {
+//       this.retries(1)
+//       browser.url("https://www.google.com/")
+//      // console.log( browser.getTitle())
+//       expect(browser).toHaveTitleContaining("jasmine")
+// })
+
+xit('Login Invalid Smoke',async()=>
 {
-       await browser.url("https://rahulshettyacademy.com/loginpagePractise/")
+       await browser.url("/loginpagePractise/")
       // await console.log(await browser.getTitle())
      //  await expect(browser).toHaveTitleContaining("Login")
       await $("#username").setValue("yasmine.hany@dxc.com")
@@ -21,14 +29,14 @@ xit('Login Invalid',async()=>
         
 //      })
 //      await console.log(await ( $(".alert-danger")).getText())
-await expect($("p")).toHaveTextContaining("username qqis rahulshettyacademy and Password is learning")
+await expect($("p")).toHaveTextContaining("username is rahulshettyacademy and Password is learning")
 
 
 })
 
-it('Login successfully',async()=>
+xit('Login successfully Smoke',async()=>
 {
-      await browser.url("https://rahulshettyacademy.com/loginpagePractise/")
+      await browser.url("/loginpagePractise/")
       await $("#username").setValue("rahulshettyacademy")
       const password = $("//input[@type='password']")
       await password.setValue("learning")

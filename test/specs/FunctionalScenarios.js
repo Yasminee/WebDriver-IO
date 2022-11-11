@@ -21,10 +21,10 @@ xit('Scrolling and mouse hover',async()=>
     await browser.acceptAlert()
     await browser.pause(2000)     
 })
-xit('Web table sort validation',async()=>
+it('Web table sort validation Smoke',async()=>
 {
 
-    await browser.url("https://rahulshettyacademy.com/seleniumPractise/#/offers")
+    await browser.url("/seleniumPractise/#/offers")
     //await $("tr th:nth-child(1)").click()
      //retrive list of veggie names into array A
      //sort the array A ->Array B
