@@ -27,13 +27,13 @@ exports.config = {
         
     },
     specs: [
-        './test/specs/**/E2EeCommerce.js'
-       // './test/specs/**/*.js'
+       // './test/specs/**/E2EeCommerce.js'
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
-        'test/specs/E2EeCommerce.js'
+        'test/specs/firstTest.js'
     ],
     //
     // ============
@@ -79,7 +79,9 @@ exports.config = {
     },
   
 ],
-    //
+
+   
+        //
     // ===================
     // Test Configurations
     // ===================
@@ -150,7 +152,10 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
 
-
+    reporters: [['allure', {
+        outputDir: 'reports',
+        disableWebdriverScreenshotsReporting: false,
+    }]],
     
     //
     // Options to be passed to Mocha.
@@ -254,8 +259,16 @@ exports.config = {
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    //     if (error) {
+    //          browser.takeScreenshot();
+    //       }
     // },
-
+    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+        if (error) {
+            await browser.takeScreenshot()
+            await browser.saveScreenshot()
+          }
+    },
 
     /**
      * Hook that gets executed after the suite has ended

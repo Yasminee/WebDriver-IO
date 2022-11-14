@@ -7,6 +7,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@wdio/allure-reporter": "^7.26.0",
         "@wdio/cli": "^7.25.2",
         "@wdio/cucumber-framework": "^7.25.1",
         "@wdio/local-runner": "^7.25.2",
@@ -21,7 +22,8 @@
         "suite1": "npx wdio run wdio.conf.js --suite suite1",
         "suite2": "npx wdio run wdio.conf.js --suite suite2",
         "regQA": "npx wdio run wdio.conf.js",
-        "regUAT": "npx wdio run wdio_uat.conf.js"
+        "regUAT": "npx wdio run wdio_uat.conf.js",
+        "GenerateReport": "allure generate reports --clean && allure open"
     },
     "dependencies": {
         "chai": "^4.3.6"

@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1668371745835' stop='1668371805854'>
+    <name>Windows Frames</name>
+    <title>Windows Frames</title>
+    <test-cases>
+        <test-case start='1668371745836' status='pending' stop='1668371745836'>
+            <name>parent and chils switch</name>
+            <title>parent and chils switch</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1668371745837' status='broken' stop='1668371805853'>
+            <name>Frames</name>
+            <title>Frames</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps>
+                <step start='1668371745841' status='broken' stop='1668371805852'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='732cfaf3-bac6-4e3e-8e23-2193a5c1aca7-attachment.json' type='application/json' size='65'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Windows Frames Frames" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\test\specs\WindowsFrames.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Windows Frames Frames" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\test\specs\WindowsFrames.js)
+                    at createTimeoutError (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:559:17)
+                    at processTimers (node:internal/timers:502:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

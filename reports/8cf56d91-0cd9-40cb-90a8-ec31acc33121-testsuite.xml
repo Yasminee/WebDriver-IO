@@ -1,0 +1,135 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1668371746569' stop='1668371856468'>
+    <name>UIControls Test Suite</name>
+    <title>UIControls Test Suite</title>
+    <test-cases>
+        <test-case start='1668371746570' status='pending' stop='1668371746570'>
+            <name>Login successfully</name>
+            <title>Login successfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1668371746570' status='broken' stop='1668371806586'>
+            <name>Dynamic dropdown Smoke</name>
+            <title>Dynamic dropdown Smoke</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps>
+                <step start='1668371746575' status='broken' stop='1668371806585'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='90496a8c-53d1-49ae-ba52-1ae2b8ae3282-attachment.json' type='application/json' size='65'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "UIControls Test Suite Dynamic dropdown Smoke" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\test\specs\UIControls.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "UIControls Test Suite Dynamic dropdown Smoke" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\test\specs\UIControls.js)
+                    at createTimeoutError (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (C:\Users\yhany\OneDrive - DXC Production\Pictures\npm\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:559:17)
+                    at processTimers (node:internal/timers:502:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1668371806587' status='passed' stop='1668371856467'>
+            <name>Dynamic dropdown sanity</name>
+            <title>Dynamic dropdown sanity</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps>
+                <step start='1668371806588' status='passed' stop='1668371811100'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8536f1fc-42c2-4f17-9f36-302d4403768e-attachment.json' type='application/json' size='65'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1668371811102' status='passed' stop='1668371855952'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7d0c89e2-6cb3-4cbd-a674-af86343c546c-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1668371855954' status='passed' stop='1668371855986'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='1fa26872-0049-404d-991a-89b5c2ed79d9-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='fac3c466-5196-4266-ade4-80287846f640-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1668371856001' status='passed' stop='1668371856017'>
+                    <name>POST /session/:sessionId/element/6a67ce7c-86da-4df4-b0cd-e3ac1e55e6b7/clear</name>
+                    <title>POST /session/:sessionId/element/6a67ce7c-86da-4df4-b0cd-e3ac1e55e6b7/clear</title>
+                    <attachments>
+                        <attachment title='Response' source='8a3dcc50-0035-4e2c-ad2a-432793c7f43d-attachment.json' type='application/json' size='275'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1668371856029' status='passed' stop='1668371856059'>
+                    <name>POST /session/:sessionId/element/d03949f2-fc92-45c2-a286-7172241d7716/click</name>
+                    <title>POST /session/:sessionId/element/d03949f2-fc92-45c2-a286-7172241d7716/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1668371856063' status='passed' stop='1668371856102'>
+                    <name>POST /session/:sessionId/element/6a67ce7c-86da-4df4-b0cd-e3ac1e55e6b7/value</name>
+                    <title>POST /session/:sessionId/element/6a67ce7c-86da-4df4-b0cd-e3ac1e55e6b7/value</title>
+                    <attachments>
+                        <attachment title='Request' source='ee182ada-3cea-44bf-be0c-ab28af0b5d63-attachment.json' type='application/json' size='19'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1668371856103' status='passed' stop='1668371856203'>
+                    <name>GET /session/:sessionId/element/d03949f2-fc92-45c2-a286-7172241d7716/selected</name>
+                    <title>GET /session/:sessionId/element/d03949f2-fc92-45c2-a286-7172241d7716/selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1668371856233' status='passed' stop='1668371856256'>
+                    <name>GET /session/:sessionId/element/e0288aa7-3b44-4568-aa55-54bf0d0370d3/selected</name>
+                    <title>GET /session/:sessionId/element/e0288aa7-3b44-4568-aa55-54bf0d0370d3/selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1668371856258' status='passed' stop='1668371856464'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ffc51104-3c83-4ed1-83b9-81eda9554389-attachment.png' type='image/png' size='97389'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='47f9b54d-eac4-4786-b75a-fca8d784f967-attachment.json' type='application/json' size='4'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
